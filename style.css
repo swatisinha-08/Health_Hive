@@ -1,0 +1,463 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+html{
+  scroll-behavior: smooth;
+}
+body {
+    background-color: #efe5e5;
+   }
+:root {
+  --purple: hsl(281, 73%, 33%);
+  --black: #262121af;
+  --light-color: #484646;
+  --box-shadow: 0.5rem 0.5rem 0 rgba(22, 160, 133, 0.2);
+  --text-shadow: 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.1);
+  --border: 0.2rem solid var(--purple);
+}
+
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: navajowhite;
+  display: inline-block;
+}
+
+/* common css end */
+
+/* common heading */
+.title h2 {
+  text-align: center;
+  padding: 1rem 0;
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  color: var;
+  color: var(--light-color);
+  text-shadow: var(--text-shadow);
+}
+
+.title h2 span {
+  color: var(--purple);
+}
+
+/* common button */
+.btn {
+  border:#05bec8;
+  padding: 0.3rem  0.3rem 0.3rem 0.7rem;
+  background: #ffffff;
+  font-size: 1.3rem;
+  color: var;
+  color: var(--purple);
+  box-shadow: var(--box-shadow);
+  border-radius: 0.4rem;
+}
+
+.btn span {
+  background-color: var(--purple);
+  color: #fff;
+  padding: 0.4rem 0.5rem;
+  margin-left: 0.3rem;
+  border-radius: 0.2rem;
+  transition: all linear 0.4s;
+}
+
+.btn:hover {
+  color: #ffffff;
+  background: var(--purple);
+}
+
+.btn:hover span {
+  color: var(--purple);
+  background: #ffffff;
+  padding: 0.4rem 0.5rem;
+  border-radius: 0.2rem;
+  margin-left: 0.6rem;
+  margin-right: auto;
+}
+
+/* heading */
+
+#header {
+  padding: 0.6rem 7%;
+  top: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+  box-shadow: 0 0 1.56rem rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header .logo {
+  font-size: 2rem;
+  color: var(--black);
+}
+
+#header i {
+  color: var(--purple);
+}
+
+#header .navbar a {
+  font-size: 1.1rem;
+  padding-left: 1.5rem;
+  color: var(--light-color);
+  text-transform: capitalize;
+}
+
+#header .navbar a:hover {
+  color: var(--purple);
+}
+
+.menu-btn {
+  font-size: 2.5rem;
+  background: #eee;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+/* Navbar part end. */
+
+#home {
+  padding: 2rem 9%;
+  padding-top: 7rem;
+  background-color: #fff4f4;
+}
+
+#home {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#home .image img {
+  width: 100%;
+  padding: 2rem 9%;
+}
+
+.content {
+  padding-top: 10rem;
+}
+
+#home h3 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.9rem;
+  color: var(--black);
+  text-shadow: var(--text-shadow);
+  line-height: 1.8;
+}
+
+#home p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.7rem;
+  color: var(--light-color);
+  line-height: 1.9rem;
+  padding: 1rem 0;
+}
+
+/* Home css part end here */
+
+.our-facilities {
+  padding: 3rem 9%;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.facility {
+  border: 0.2rem solid var(--purple);
+  text-align: center;
+  padding: 1rem 3.4rem;
+  border-radius: 0.4rem;
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+}
+
+.facility span {
+  color: var(--purple);
+  font-size: 3rem;
+}
+
+.facility h3 {
+  font-size: 3rem;
+  color: var(--black);
+  text-shadow: var(--text-shadow);
+}
+
+.facility p {
+  padding-top: 1rem;
+  color: var(--black);
+}
+
+/* Our Facilities css part end here */
+
+#our-services {
+  padding-bottom: 1rem;
+  padding: 0 9% 2rem;
+  background: #ffffff;
+}
+
+/*  */
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+
+.service {
+  border: 0.2rem solid var(--purple);
+  padding: 2.5rem;
+  background: hsla(285, 87%, 81%, 0.549);
+  border-radius: 0.4rem;
+  box-shadow: var(--box-shadow);
+}
+
+.service i {
+  color: var(--purple);
+  font-size: 3rem;
+}
+
+.service h3 {
+  font-size: 1.6rem;
+  color: var(--black);
+  padding: 0.7rem 0;
+}
+
+.service p {
+  font-size: 1rem;
+  color: var(--light-color);
+  padding-bottom: 1rem;
+}
+
+/* our service part css end from here */
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0 9%;
+}
+
+.about-image {
+  width: 50%;
+}
+
+.about-text {
+  padding: 1rem 1rem 1rem;
+}
+
+.about-text h3 {
+  font-size: 2.9rem;
+  color: var(--black);
+  text-shadow: var(--text-shadow);
+  line-height: 1.5;
+}
+
+.about-text p {
+  font-size: 1.5rem;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  line-height: 1.5;
+}
+
+/* about us section css end from here. */
+
+/* #our-doctors {
+  margin-bottom: 700px;
+} */
+
+.doctors {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem;
+  padding: 3rem 9%;
+  background: #f5f5f5;
+}
+
+.doctor {
+  border: var(--border);
+  border-radius: 0.3rem;
+  box-shadow: var(--box-shadow);
+  padding: 1.5rem;
+  text-align: center;
+  background: #fff;
+}
+
+.doctor-image img {
+  height: 15rem;
+  border: 0.2rem solid var(--purple);
+  border-radius: 0.4rem;
+}
+
+.personal-information h4 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: var(--black);
+}
+
+.personal-information small {
+  color: var(--purple);
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+.icons {
+  padding-top: 0.8rem;
+}
+
+.icon {
+  padding: 0.2rem;
+}
+
+.icon i {
+  border: 0.15rem solid var(--purple);
+  color: var(--purple);
+  padding: 0.7rem;
+  border-radius: 0.3rem;
+  font-size: 1.4rem;
+  transition: all linear 0.3s;
+}
+
+.icon i:hover {
+  color: #fff;
+  background-color: var(--purple);
+}
+
+/* our doctors part end. */
+
+
+
+
+/* clients review */
+#clients-review {
+  background: #e0f4fe;
+  margin: 4rem 0 0 0;
+
+}
+
+.reviews {
+  display: grid;
+  grid-gap: 2rem;
+  padding: 1rem 7rem 5rem 7rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.review {
+  border: var(--border);
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  background: #fdf3f3;
+  padding: 2rem 2rem 0;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.review::before {
+    content: "";
+  position: absolute;
+  top: 0rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--purple);
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  height: 14rem;
+  width: 120%;
+  z-index: -1;
+}
+
+.review img {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  border: 0.2rem solid #a49f9f;
+}
+
+.review p {
+  
+  padding: 2rem 0;
+}
+
+
+/* footer */
+#footer{
+background-color: #4b4949;
+padding: 2rem 0;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 4rem;
+  gap: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-box h3 {
+  font-size: 1.7rem;
+  color: #befefe;
+}
+
+.footer-box a {
+  display: block;
+  padding: .4rem 0;
+  color: #ffffff;
+  transition: all ease .3s;
+}
+.footer-box a:hover{
+padding-left: .5rem;
+}
+.footer-box a i{
+color: #d3d3dd;
+padding-right: .5rem;
+}
+
+.copy-right{
+text-align: center;
+font-size: 110%;
+color: #befefe;
+}
+.copy-right span{
+color: #2dd4dd;
+}
+
+@media screen and (max-width: 992px) {
+    .logo {
+                display: none;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    /* .link{
+                font-size: .6rem;
+                padding-left: .7rem;
+    } */
+    #header .navbar a {
+                font-size: .9rem;
+                padding-left: .7rem;
+
+    }
+}

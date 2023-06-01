@@ -1,0 +1,24 @@
+{
+  "name": "basin-demo",
+  "version": "1.0.0",
+  "description": "A minimal example form showing how easy it is to use Basin.",
+  "main": "lo.html",
+  "scripts": {
+    "start": "parcel lo.html --open",
+    "build": "parcel build lo.html"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "7.2.0",
+    "typescript": "4.4.4"
+  },
+  "resolutions": {
+    "@babel/preset-env": "7.13.8"
+  },
+  "keywords": [
+    "jamstack",
+    "form backend",
+    "form endpoint",
+    "html form"
+  ]
+}
